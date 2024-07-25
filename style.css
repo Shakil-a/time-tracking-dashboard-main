@@ -35,6 +35,8 @@
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: "Rubik", sans-serif;
+    background-color: var(--Very-dark-blue);
+    color: white;
   }
   
   img, picture, video, canvas, svg {
@@ -48,4 +50,62 @@
   
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+  }
+
+  #profile-picture{
+    width: 60px;
+  }
+
+  .cards-container{
+    padding: 50px 20px;
+    display: grid;
+    gap: 1.5em;
+  }
+
+  .top,
+  .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .person-info{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+  }
+
+  h2{
+    display: flex;
+    flex-direction: column;
+    line-height: 1em;
+  }
+
+  #work-card,
+  #play-card,
+  #study-card,
+  #exercise-card,
+  #social-card,
+  #self_care-card{
+    background-color: var(--Dark-blue);
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  #button-options{
+    background-color: var(--Dark-blue);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  button{
+    border: none;
+    background-color: var(--Dark-blue);
+  }
+
+  .person-info{
+    background-color: var(--Blue);
   }
