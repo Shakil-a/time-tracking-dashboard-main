@@ -3,94 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Time tracking dashboard</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <main class="cards-container">
-    <div id="person-card">
+    <div id="person-card" class="card">
       <div class="person-info">
         <img src="./images/image-jeremy.png" alt="image of Jeremy" id="profile-picture">
-        <h2>Report for
-          <span class="name">Jeremy Robson</span></h2>
+        <h2>Report for <span class="name">Jeremy Robson</span></h2>
       </div>
       <div id="button-options">
         <button id="daily">Daily</button>
         <button id="weekly">Weekly</button>
         <button id="monthly">Monthly</button>
-       </div>
-    </div>
-
-    <div id="work-card">
-      <div class="top">
-        <p class="title">Work</p>
-        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
-      </div>
-      <div class="bottom">
-      <p class="current-year">32hrs</p> <!-- weekly -->
-      <p class="previous-year">Last week - 36hrs</p> <!-- weekly -->
       </div>
     </div>
 
-    <div id="play-card">
-      <div class="top">
-        <p class="title">Play</p>
-        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+    <div id="work-card" class="card">
+      <div class="card-header">
+        <img src="./images/icon-work.svg" alt="Work icon">
       </div>
-      <div class="bottom">
-        <p class="current-year">10hrs</p> <!-- weekly -->
-        <p class="previous-year">Last week - 8hrs</p> <!-- weekly -->
-      </div>
-    </div>
-
-    <div id="study-card">
-      <div class="top">
-        <p class="title">Study</p>
-        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
-      </div>
-      <div class="bottom">
-        <p class="current-year">4hrs</p> <!-- weekly -->
-        <p class="previous-year">Last week - 7hrs</p> <!-- weekly -->
+      <div class="card-content">
+        <div class="top">
+          <p class="title">Work</p>
+          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
+        <div class="bottom">
+          <p class="current-year">32hrs</p>
+          <p class="previous-year">Last week - 36hrs</p>
+        </div>
       </div>
     </div>
 
-    <div id="exercise-card">
-      <div class="top">
-        <p class="title">Exercise</p>
-        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+    <div id="play-card" class="card">
+      <div class="card-header">
+        <img src="./images/icon-play.svg" alt="Play icon">
       </div>
-      <div class="bottom">
-        <p class="current-year">4hrs</p> <!-- weekly -->
-        <p class="previous-year">Last week - 5hrs</p> <!-- weekly -->
-      </div>
-    </div>
-
-    <div id="social-card">
-      <div class="top">
-        <p class="title">Social</p>
-        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
-      </div>
-      <div class="bottom">
-        <p class="current-year">5hrs</p> <!-- weekly -->
-        <p class="previous-year">Last week - 10hrs</p> <!-- weekly -->
+      <div class="card-content">
+        <div class="top">
+          <p class="title">Play</p>
+          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
+        <div class="bottom">
+          <p class="current-year">10hrs</p>
+          <p class="previous-year">Last week - 8hrs</p>
+        </div>
       </div>
     </div>
 
-    <div id=self_care-card>
-      <div class="top">
-       <p class="title">Self Care</p>
-       <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+    <div id="study-card" class="card">
+      <div class="card-header">
+        <img src="./images/icon-study.svg" alt="Study icon">
       </div>
-      <div class="bottom">
-        <p class="current-year">2hrs</p> <!-- weekly -->
-        <p class="previous-year">Last week - 2hrs</p> <!-- weekly -->
+      <div class="card-content">
+        <div class="top">
+          <p class="title">Study</p>
+          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
+        <div class="bottom">
+          <p class="current-year">4hrs</p>
+          <p class="previous-year">Last week - 7hrs</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="exercise-card" class="card">
+      <div class="card-header">
+        <img src="./images/icon-exercise.svg" alt="Exercise icon">
+      </div>
+      <div class="card-content">
+        <div class="top">
+          <p class="title">Exercise</p>
+          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
+        <div class="bottom">
+          <p class="current-year">4hrs</p>
+          <p class="previous-year">Last week - 5hrs</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="social-card" class="card">
+      <div class="card-header">
+        <img src="./images/icon-social.svg" alt="Social icon">
+      </div>
+      <div class="card-content">
+        <div class="top">
+          <p class="title">Social</p>
+          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
+        <div class="bottom">
+          <p class="current-year">5hrs</p>
+          <p class="previous-year">Last week - 10hrs</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="self_care-card" class="card">
+      <div class="card-header">
+        <img src="./images/icon-self-care.svg" alt="Self Care icon">
+      </div>
+      <div class="card-content">
+        <div class="top">
+          <p class="title">Self Care</p>
+          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
+        <div class="bottom">
+          <p class="current-year">2hrs</p>
+          <p class="previous-year">Last week - 2hrs</p>
+        </div>
       </div>
     </div>
   </main>
-
 </body>
 </html>

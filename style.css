@@ -6,7 +6,7 @@
   /* card colors */
   --Light-red: hsl(15, 100%, 70%); /* work */
   --Soft-blue: hsl(195, 74%, 62%); /* play */
-  --Light-red: hsl(348, 100%, 68%); /* study */
+  --dark-red: hsl(348, 100%, 68%); /* study */
   --Lime-green: hsl(145, 58%, 55%); /* exercise */
   --Violet: hsl(264, 64%, 52%); /* social */
   --Soft-orange: hsl(43, 84%, 65%); /* self care */
@@ -87,12 +87,12 @@
     font-weight: var(--fw-regular);
   }
 
-  #work-card,
-  #play-card,
-  #study-card,
-  #exercise-card,
-  #social-card,
-  #self_care-card{
+  #work-card .card-content,
+  #play-card .card-content,
+  #study-card .card-content,
+  #exercise-card .card-content,
+  #social-card .card-content,
+  #self_care-card .card-content{
     background-color: var(--Dark-blue);
     padding: 15px;
     border-radius: 15px;
@@ -143,3 +143,49 @@
   border: 2px solid white;
   border-radius: 50%;
 }
+
+.card-header {
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.card-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.card-content{
+  margin-top: -0.3rem;
+}
+
+
+#work-card .card-header{
+  background-color: var(--Light-red);
+}
+
+#play-card .card-header{
+  background-color: var(--Soft-blue);
+}
+
+#study-card .card-header{
+  background-color: var(--dark-red);
+}
+
+#exercise-card .card-header{
+  background-color: var(--Lime-green);
+}
+
+#social-card .card-header{
+  background-color: var(--Violet);
+}
+
+#self_care-card .card-header{
+  background-color: var(--Soft-orange);
+}
+
