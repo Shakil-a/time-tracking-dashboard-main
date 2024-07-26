@@ -36,7 +36,9 @@
     -webkit-font-smoothing: antialiased;
     font-family: "Rubik", sans-serif;
     background-color: var(--Very-dark-blue);
-    color: white;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 300;
   }
   
   img, picture, video, canvas, svg {
@@ -72,13 +74,17 @@
   .person-info{
     display: flex;
     align-items: center;
-    gap: 3em;
+    gap: 1em;
+    padding: 25px;
   }
 
   h2{
     display: flex;
     flex-direction: column;
     line-height: 1em;
+    font-size: 18px;
+    color: var(--Desaturated-blue);
+    font-weight: var(--fw-regular);
   }
 
   #work-card,
@@ -88,7 +94,7 @@
   #social-card,
   #self_care-card{
     background-color: var(--Dark-blue);
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
   }
 
@@ -104,8 +110,36 @@
   button{
     border: none;
     background-color: var(--Dark-blue);
+    color: var(--Pale-Blue);
+    font-size: 1rem;
   }
 
   .person-info{
     background-color: var(--Blue);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
+
+  .name{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: var(--fw-bolder);
+  }
+
+  .current-year{
+    font-size: 2rem;
+  }
+
+.title{
+  font-weight: 500;
+}
+
+.previous-year{
+  color: var(--Pale-Blue);
+  font-size: 1rem;
+}
+
+#profile-picture{
+  border: 2px solid white;
+  border-radius: 50%;
+}
